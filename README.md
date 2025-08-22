@@ -7,7 +7,6 @@ To evaluate and compare the effectiveness of prompting techniques (zero-shot, fe
 You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
 
 Your goal is to determine which combination of prompting technique + platform provides the best summary in terms of:
-
 Accuracy
 
 Coherence
@@ -22,27 +21,27 @@ User experience
 
 ## **Algorithm**
 
-Step 1: Select the Article
+# Step 1: Select the Article
 
 Choose a ~500-word technical article on "The Basics of Blockchain Technology" (same article used across all tests to ensure fairness).
 
-Step 2: Define Prompting Techniques
+# Step 2: Define Prompting Techniques
 
-Zero-shot: "Summarize the following article in under 150 words."
+*Zero-shot*: "Summarize the following article in under 150 words."
 
-Few-shot: Provide 2–3 example summaries of different short texts, then ask for the blockchain article summary.
+*Few-shot*: Provide 2–3 example summaries of different short texts, then ask for the blockchain article summary.
 
-Chain-of-thought: "Summarize the article step by step: first extract key ideas, then condense them into a coherent summary."
+*Chain-of-thought*: "Summarize the article step by step: first extract key ideas, then condense them into a coherent summary."
 
-Role-based: "You are an educational content curator for undergraduates. Write a clear, simple summary of this article."
+*Role-based*: "You are an educational content curator for undergraduates. Write a clear, simple summary of this article."
 
-Step 3: Run Across AI Platforms
+# Step 3: Run Across AI Platforms
 
 Input the same article and prompts into ChatGPT, Gemini, Claude, Copilot.
 
 Collect 16 summaries (4 prompting techniques × 4 platforms).
 
-Step 4: Evaluation Metrics
+# Step 4: Evaluation Metrics
 Evaluate each summary using:
 
 Accuracy – Fidelity to original content (measured by expert or rubric).
@@ -55,7 +54,7 @@ Speed – Response time (measured or approximated).
 
 User Experience – Subjective ease of use, formatting, clarity.
 
-Step 5: Scoring System
+# Step 5: Scoring System
 
 Use a 1–5 Likert scale for each criterion.
 
@@ -71,22 +70,24 @@ Speed: 1 = >30s, 5 = <5s
 
 User Experience: 1 = confusing output, 5 = very clear
 
-Step 6: Aggregation
+# Step 6: Aggregation
 
 Compute average score per technique per platform.
 
 Identify the best-performing combination.
 
 ## Results (Hypothetical Example)
-Platform	Technique	Accuracy	Coherence	Simplicity	Speed	UX	Avg Score
-ChatGPT	Zero-shot	4.5	4.2	4.0	4.8	4.5	4.4
-ChatGPT	Few-shot	4.7	4.6	4.2	4.6	4.6	4.5
-ChatGPT	Chain-of-thought	4.8	4.7	3.9	4.4	4.4	4.4
-ChatGPT	Role-based	4.9	4.8	4.7	4.5	4.8	4.7
-Gemini	Zero-shot	4.0	3.9	4.0	4.7	4.2	4.1
-Gemini	Few-shot	4.3	4.2	4.1	4.6	4.4	4.3
-Claude	Role-based	4.8	4.7	4.6	4.2	4.7	4.6
-Copilot	Zero-shot	3.5	3.6	3.9	4.8	3.8	3.9
+| Platform | Technique        | Accuracy | Coherence | Simplicity | Speed | UX  | Avg Score |
+| -------- | ---------------- | -------- | --------- | ---------- | ----- | --- | --------- |
+| ChatGPT  | Zero-shot        | 4.5      | 4.2       | 4.0        | 4.8   | 4.5 | **4.4**   |
+| ChatGPT  | Few-shot         | 4.7      | 4.6       | 4.2        | 4.6   | 4.6 | **4.5**   |
+| ChatGPT  | Chain-of-thought | 4.8      | 4.7       | 3.9        | 4.4   | 4.4 | **4.4**   |
+| ChatGPT  | Role-based       | 4.9      | 4.8       | 4.7        | 4.5   | 4.8 | **4.7**   |
+| Gemini   | Zero-shot        | 4.0      | 3.9       | 4.0        | 4.7   | 4.2 | **4.1**   |
+| Gemini   | Few-shot         | 4.3      | 4.2       | 4.1        | 4.6   | 4.4 | **4.3**   |
+| Claude   | Role-based       | 4.8      | 4.7       | 4.6        | 4.2   | 4.7 | **4.6**   |
+| Copilot  | Zero-shot        | 3.5      | 3.6       | 3.9        | 4.8   | 3.8 | **3.9**   |
+
 
 Key Findings (example):
 
