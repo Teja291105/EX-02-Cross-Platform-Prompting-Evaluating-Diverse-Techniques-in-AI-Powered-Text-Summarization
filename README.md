@@ -91,6 +91,8 @@ Identify the best-performing combination.
 | Copilot  | Zero-shot        | 3.5      | 3.6       | 3.9        | 4.8   | 3.8 | **3.9**   |
 
 
+---
+
 Key Findings (example):
 
 Best combo: ChatGPT + Role-based prompting (avg 4.7)
@@ -103,6 +105,8 @@ Best for simplicity: Claude (Role-based)
 
 
 Thus,the Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization prompted in ai tools
-The best combination was ChatGPT with role-based prompting, as it gave the most accurate, coherent, and student-friendly summaries. Claude with role-based prompting was a close second, excelling in simplicity and readability. Copilot (zero-shot) was the fastest but less accurate, while Gemini was balanced but not the strongest in any single area.
+The best combination was ChatGPT with role-based prompting, as it gave the most accurate, coherent, and student-friendly summaries. 
+Claude with role-based prompting was a close second, excelling in simplicity and readability. Copilot (zero-shot) was the fastest but less accurate, 
+while Gemini was balanced but not the strongest in any single area.
 
 Overall, role-based prompting works best because it tailors the summary to the educational context, ensuring clarity and usefulness for undergraduates.
